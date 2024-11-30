@@ -5,9 +5,20 @@ import '../global.css'
 
 export default function RootLayout() {
   return (
-    <Stack>
-        <Stack.Screen name="index" options={{title: 'SAFEHA'}} />
+    <Stack
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "gray",
+          
+        },
+        headerTintColor: "#fff",
+        headerTitleStyle: {
+          fontWeight: "bold",
+        },
+      }}
+    >
+      <Stack.Screen name="(tabs)" options={{ title: "SAFEHA" }} />
+      <Stack.Screen name="profile" options={{ title: "Profile" }} />
     </Stack>
-  
-)
+  );
 }
