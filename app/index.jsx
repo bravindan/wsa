@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <View>
         <StatusBar style='auto' />
-      <Text>HomePage</Text>
+      <Text className="text-red-500">HomePage</Text>
     </View>
   )
 }
